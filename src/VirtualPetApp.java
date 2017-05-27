@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class VirtualPetApp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Scanner scanner = new Scanner(System.in);
 		VirtualPet agador = new VirtualPet();
@@ -82,22 +81,22 @@ public class VirtualPetApp {
 				sleepyLevel = agador.getSleepyTick();
 			}
 			//If xLevel 20 or more, virtual pet begs
-			if (hungerLevel >= 20) {
+			if (hungerLevel > 19) {
 				System.out.println("Agador Spartacus is starving.");
 				System.out.println("");
 				System.out.println("");
 			}
-			if (thirstLevel >= 20) {
+			if (thirstLevel > 19) {
 				System.out.println("Agador Spartacus is dehydrated.");
 				System.out.println("");
 				System.out.println("");
 			}
-			if (boredLevel >= 20) {
+			if (boredLevel > 19) {
 				System.out.println("Ho-hum. Agador Spartacus is sooooo boooooored.");
 				System.out.println("");
 				System.out.println("");
 			}
-			if (sleepyLevel >= 20) {
+			if (sleepyLevel > 19) {
 				System.out.println("YAAAAAAAWN! Agador Spartacus is soooooo tired");
 				System.out.println("");
 				System.out.println("");
@@ -106,7 +105,7 @@ public class VirtualPetApp {
 
 		System.out.println("Goodbye. Adieu. Auf wiedersehen. Gesundheit.");
 		System.out.println("Agador Spartacus didn't like it here anyway!");
-		System.out.println("Snif. Snif. *Agador Spartacus begins inconsolable weeping*");
+		System.out.println("Snif. Snif. *Agador Spartacus begins inconsolably weeping*");
 		scanner.close();
 		System.exit(0);
 

@@ -9,44 +9,44 @@ public class VirtualPet {
 
 	Random generator = new Random();
 
-	public int getHunger() {return hungerLevel;}
-	public int feed() {return hungerLevel = 0;}
-	public int getThirst() {return thirstLevel;}
-	public int water() {return thirstLevel = 0;}
-	public int getBored() {return boredLevel;}
-	public int play() {
-		hungerLevel += 5;// play = more sleepy
-		thirstLevel += 5;// play = more sleepy
+	int getHunger() {return hungerLevel;}
+	int feed() {return hungerLevel = 0;}
+	int getThirst() {return thirstLevel;}
+	int water() {return thirstLevel = 0;}
+	int getBored() {return boredLevel;}
+	int play() {
+		hungerLevel += 5;// play = more hungey
+		thirstLevel += 5;// play = more thirsty
 		sleepyLevel += 5;// play = more sleepy
 		return boredLevel = 0;
 	}
 
-	public int getSleepy() {return sleepyLevel;}
-	public int bed() {return sleepyLevel = 0;}
+	int getSleepy() {return sleepyLevel;}
+	int bed() {return sleepyLevel = 0;}
 
-// make time pass
-	public int getHungerTick() 
+// Tick/make time pass
+	int getHungerTick() 
 	{
 		int tick = generator.nextInt(5);
 		hungerLevel += tick;
 		return hungerLevel;
 	}
 
-	public int getThirstTick() 
+	int getThirstTick() 
 	{
 		int tick = generator.nextInt(5);
 		thirstLevel += tick;
 		return thirstLevel;
 	}
 
-	public int getBoredTick() 
+	int getBoredTick() 
 	{		
 		int tick = generator.nextInt(5);
 		boredLevel += tick;
 		return boredLevel;
 	}
 
-	public int getSleepyTick() 
+	int getSleepyTick() 
 	{
 		int tick = generator.nextInt(5);
 		sleepyLevel += tick;
