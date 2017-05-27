@@ -37,34 +37,36 @@ public class VirtualPet {
 	}
 
 	int getSleepy() {
-		return sleepyLevel;
+		hungerLevel += 10;// because you wake up hungry, sleepy = more hungry
+		thirstLevel += 10;// because you wake up thirsty, sleepy = more thirsty
+		return sleepyLevel;// if beddy-by-boo, sleepy = 0
 	}
 
 	int rest() {
 		return sleepyLevel = 0;
-	}// if rest, sleepy = 0
+	}
 
 	// Tick/make time pass
 	int getHungerTick() {
-		int tick = generator.nextInt(5);
+		int tick = generator.nextInt(20);
 		hungerLevel += tick;
 		return hungerLevel;
 	}
 
 	int getThirstTick() {
-		int tick = generator.nextInt(5);
+		int tick = generator.nextInt(20);
 		thirstLevel += tick;
 		return thirstLevel;
 	}
 
 	int getBoredTick() {
-		int tick = generator.nextInt(5);
+		int tick = generator.nextInt(20);
 		boredLevel += tick;
 		return boredLevel;
 	}
 
 	int getSleepyTick() {
-		int tick = generator.nextInt(5);
+		int tick = generator.nextInt(20);
 		sleepyLevel += tick;
 		return sleepyLevel;
 	}
