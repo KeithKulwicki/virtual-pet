@@ -119,7 +119,7 @@ public class VirtualPetApp {
 		System.out.println("   (_()_)__/ )		I don't need this stuff, and I don't need YOU.");    
 		System.out.println("  / _,==.____ )		I don't need ANYTHING.");
 		System.out.println(" (   |--|      )		Except this. [Agador Spartacus picks up an ashtray]");
-		System.out.println(" (_.|__|'-.__ )_	And that's the only thing I need is THIS. I don't need this or this.");
+		System.out.println("  (_.|__|'-.__ )_	And that's the only thing I need is THIS. I don't need this or this.");
 		System.out.println(" ( {        {     ) 	Just this ashtray...");
 		System.out.println("  {  {      (      }		And this paddle game.");
 		System.out.println("   )  '._____)    /  	The ashtray and the paddle game and that's all I need...");  
