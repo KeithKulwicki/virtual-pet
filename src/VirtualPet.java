@@ -2,8 +2,8 @@ import java.util.Random;
 
 public class VirtualPet {
 	// attributes
-	int hungerLevel = 10;
-	int thirstLevel = 10;
+	int hungerLevel = 5;
+	int thirstLevel = 5;
 	int boredLevel = 10;
 	int sleepyLevel = 10;
 
@@ -37,9 +37,9 @@ public class VirtualPet {
 	}
 
 	int getSleepy() {
-		hungerLevel += 10;// because you wake up hungry, sleepy = more hungry
-		thirstLevel += 10;// because you wake up thirsty, sleepy = more thirsty
-		return sleepyLevel;// if beddy-by-boo, sleepy = 0
+		hungerLevel += 5;// because you wake up hungry, sleepy = more hungry
+		thirstLevel += 5;// because you wake up thirsty, sleepy = more thirsty
+		return sleepyLevel;// if beddy-by-boo/rest, sleepy = 0
 	}
 
 	int rest() {
@@ -48,25 +48,25 @@ public class VirtualPet {
 
 	// Tick/make time pass
 	int getHungerTick() {
-		int tick = generator.nextInt(20);
+		int tick = generator.nextInt(10);
 		hungerLevel += tick;
 		return hungerLevel;
 	}
 
 	int getThirstTick() {
-		int tick = generator.nextInt(20);
+		int tick = generator.nextInt(10);
 		thirstLevel += tick;
 		return thirstLevel;
 	}
 
 	int getBoredTick() {
-		int tick = generator.nextInt(20);
+		int tick = generator.nextInt(10);
 		boredLevel += tick;
 		return boredLevel;
 	}
 
 	int getSleepyTick() {
-		int tick = generator.nextInt(20);
+		int tick = generator.nextInt(10);
 		sleepyLevel += tick;
 		return sleepyLevel;
 	}
