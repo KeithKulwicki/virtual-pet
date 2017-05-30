@@ -113,7 +113,7 @@ public class VirtualPetApp {
 			}
 		} while (choice != 6);
 
-		System.out.println("   (()__(()		Well I'm gonna to go then!");
+		System.out.println("   (()__(()		Well I'm gonna go then!");
 		System.out.println("   ( { }    )		[Agador Spartacus shuffles feet, moving slowly towards front door]");
 		System.out.println("   . o o    /		And I don't need any of this.");
 		System.out.println("   (_()_)__/ )		I don't need this stuff, and I don't need YOU.");    
